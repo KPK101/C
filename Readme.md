@@ -17,7 +17,7 @@ Convolution between the input signal $f$ and filter $g$ is defined as:
 
 ```math
 
-(f*g)(t) = \sum[\tau]g[t-\tau]
+(f*g)(t) = \sum f[\tau]g[t-\tau]
 
 ```
 
