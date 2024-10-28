@@ -1,5 +1,21 @@
 # Convolution in CUDA
 
+
+
+## Convolution Theory
+
+Convolution is an algorithm primarily used in signal processing.
+
+It has gain popularity in the AI community because of its applications in "Convolutional Neural Networks". This is, however, is a misnomer as the operation performed by CNNs is actually correlation and not strictly convolution. The distinction between the two lies in the fact that convolution essentially "flips" the kernel before computing the overlap sum/integral of the input signal and the filter being used.
+
+Convolution between the input signal $f$ and filter $g$ is defined as:
+
+```math
+
+(f*g)(t) = \sum f[\tau]g[t-\tau]
+
+```
+
 ## Methods
 The kernels file includes three implementations of the convolution operation
 
